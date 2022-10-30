@@ -17,6 +17,6 @@ const Wnfs = NativeModules.Wnfs
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return Wnfs.multiply(a, b);
+export function testWNFSLib(): Promise<number> {
+  return Wnfs.testWNFSLib();
 }

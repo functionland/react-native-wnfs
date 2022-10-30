@@ -9,11 +9,11 @@ npm install react-native-wnfs
 ## Usage
 
 ```js
-import { multiply } from "react-native-wnfs";
+import { testWNFSLib } from "react-native-wnfs";
 
 // ...
 
-const result = await multiply(3, 7);
+const result = await testWNFSLib();
 ```
 
 ## Contributing
