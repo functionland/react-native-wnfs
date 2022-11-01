@@ -3,9 +3,13 @@ import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
 import com.facebook.react.bridge.Promise
-import com.functionland.lib.testWNFS
+import com.functionland.wnfslib.*
 
 class WnfsModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
+
+    init {
+      System.loadLibrary("wnfslib")
+    }
 
     override fun getName(): String {
         return "Wnfs"
@@ -16,6 +20,6 @@ class WnfsModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaMo
     @ReactMethod
     fun testWNFSLib( promise: Promise) {
           promise.resolve(testWNFS())
-        }
-
     }
+
+}
