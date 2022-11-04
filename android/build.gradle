@@ -5,12 +5,15 @@ buildscript {
   repositories {
       google()
       mavenCentral()
+      gradlePluginPortal()
   }
 
   dependencies {
     classpath 'com.android.tools.build:gradle:3.5.3'
     // noinspection DifferentKotlinGradleVersion
     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    classpath "io.github.0ffz:gpr-for-gradle:1.2.1"
+
   }
 }
 
@@ -58,9 +61,11 @@ android {
 
 }
 
+apply plugin: "io.github.0ffz.github-packages"
 repositories {
   mavenCentral()
   google()
+  maven githubPackage.invoke("functionland/wnfs-android")
 
   def found = false
   def defaultDir = null
@@ -135,6 +140,8 @@ dependencies {
   implementation "com.facebook.react:react-native:+"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
   implementation fileTree(dir: "libs", include: ["*.aar"])
+  // implementation "com.functionland:wnfslib:0.1.0-SNAPSHOT-f0370370a1"
+
 // From node_modules
 }
 

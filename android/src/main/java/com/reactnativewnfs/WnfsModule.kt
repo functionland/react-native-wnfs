@@ -21,5 +21,4 @@ class WnfsModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaMo
     fun testWNFSLib( promise: Promise) {
           promise.resolve(testWNFS())
     }
-
 }
