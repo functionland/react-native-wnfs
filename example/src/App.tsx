@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, ScrollView } from 'react-native';
 import { testWNFSLib } from 'react-native-wnfs';
 
 export default function App() {
@@ -12,7 +12,9 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+	<ScrollView>
       <Text>Result: {result}</Text>
+	  </ScrollView>
     </View>
   );
 }
