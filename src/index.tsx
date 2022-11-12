@@ -17,6 +17,38 @@ const Wnfs = NativeModules.Wnfs
       }
     );
 
-export function testWNFSLib(): Promise<number> {
-  return Wnfs.testWNFSLib();
+export function createPrivateForest(dbPath: string): Promise<string> {
+  return Wnfs.createPrivateForest(dbPath);
+}
+
+export function createRootDir(dbPath: string, cid: string): Promise<any> {
+  return Wnfs.createRootDir(dbPath, cid);
+}
+
+export function writeFile(
+  dbPath: string,
+  cid: string,
+  privateRef: String,
+  filePath: String,
+  localFilePath: String
+): Promise<string> {
+  return Wnfs.writeFile(dbPath, cid, privateRef, filePath, localFilePath);
+}
+
+export function readFile(
+  dbPath: string,
+  cid: string,
+  privateRef: String,
+  filePath: String
+): Promise<Uint8Array> {
+  return Wnfs.readFile(dbPath, cid, privateRef, filePath);
+}
+
+export function ls(
+  dbPath: string,
+  cid: string,
+  privateRef: String,
+  filePath: String
+): Promise<any> {
+  return Wnfs.ls(dbPath, cid, privateRef, filePath);
 }
