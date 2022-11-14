@@ -1,5 +1,5 @@
 {
-  "name": "react-native-wnfs",
+  "name": "@functionland/react-native-wnfs",
   "version": "0.1.0",
   "description": "test",
   "main": "lib/commonjs/index",
