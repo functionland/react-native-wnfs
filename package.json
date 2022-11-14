@@ -38,15 +38,19 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "WNFS",
+    "Webnative File System",
+    "IPFS private filesystem",
+    "Functionland"
   ],
-  "repository": "https://github.com/hhio618/react-native-wnfs",
+  "repository": "https://github.com/functionland/react-native-wnfs",
   "author": "hhio618 <hhio618@gmail.com> (https://github.com/hhio618)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hhio618/react-native-wnfs/issues"
+    "url": "https://github.com/functionland/react-native-wnfs/issues"
   },
-  "homepage": "https://github.com/hhio618/react-native-wnfs#readme",
+  "homepage": "https://github.com/functionland/react-native-wnfs#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
