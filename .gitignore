@@ -7,6 +7,7 @@
 
 # VSCode
 .vscode/
+.history/
 jsconfig.json
 
 # Xcode
@@ -44,15 +45,14 @@ android.iml
 #
 example/ios/Pods
 
-# Ruby
-example/vendor/
-
 # node.js
 #
 node_modules/
 npm-debug.log
 yarn-debug.log
 yarn-error.log
+yarn.lock
+package-lock.json
 
 # BUCK
 buck-out/

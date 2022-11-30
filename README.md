@@ -1,5 +1,7 @@
-# react-native-wnfs
-React native wnfs library
+# react-native-fula
+
+This package is a bridge to use the WNFS in the react-native
+
 ## Installation
 
 ```sh
@@ -9,11 +11,19 @@ npm install react-native-wnfs
 ## Usage
 
 ```js
-import { testWNFSLib } from "react-native-wnfs";
+import { ls } from 'react-native-wnfs';
 
 // ...
 
-const result = await testWNFSLib();
+//Initialize the fula client, which creates the libp2p connection
+
+
+//Store file to the box
+
+
+//Get file path form the box
+
+
 ```
 
 ## Contributing
@@ -23,7 +33,3 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 ## License
 
 MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
