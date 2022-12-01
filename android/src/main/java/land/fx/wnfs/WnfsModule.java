@@ -19,7 +19,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
 import fulamobile.Client;
-import land.fx.wnfslib.Config;
+import land.fx.wnfslib.LibKt;
 
 
 @ReactModule(name = WnfsModule.NAME)
