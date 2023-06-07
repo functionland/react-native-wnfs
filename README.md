@@ -3,7 +3,7 @@ React native wnfs library
 ## Installation
 
 ```sh
-npm install react-native-wnfs
+npm install @functionland/react-native-wnfs
 ```
 
 ## Usage
